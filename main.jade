@@ -1,0 +1,17 @@
+head
+    title Censorble Soccer
+
+body
+    h1 Consorble Soccer
+    +leaderboard
+
+template(name="leaderboard")
+    ol.leaderboard
+        each players
+            +player
+
+template(name="player")
+    li(class="player {{selected}}")
+        span.name #{name}
+        span.score #{score}
+
