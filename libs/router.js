@@ -10,20 +10,28 @@ FlowRouter.route('/blog/:postId', {
 
 FlowRouter.route('/', {
     action: function() {
-        FlowLayout.render("teams")
+        if (! Meteor.userId()) {
+            FlowLayout.render("registration")
+        } else {
+            FlowLayout.render("teams")
+        }
     }
 });
 
 FlowRouter.route('/teams/edit/:teamId', {
     action: function() {
-        console.log("boo");
         FlowLayout.render("edit_team")
     }
 });
 
 FlowRouter.route('/teams', {
     action: function() {
-        console.log("boop");
         FlowLayout.render("teams")
+    }
+});
+
+FlowRouter.route('/nodes', {
+    action: function() {
+        FlowLayout.render("nodes")
     }
 });
