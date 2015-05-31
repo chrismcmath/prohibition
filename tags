@@ -4,3 +4,12 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/all_nodeds.js	/^    "mas": {$/;"	p
+all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/all_nodes.js	/^    "mas": {$/;"	p
+all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/public/metadata/all_nodes.js	/^    "mas": {$/;"	p
+jQuery	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var jQuery = require('.\/jquery.min.js');$/;"	v
+json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('\/public\/metadata\/all_nodes.json'); $/;"	v
+json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); $/;"	v
+json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); \/\/(with path)$/;"	v
+loadJSON	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^function loadJSON(callback) {   $/;"	f
+xobj.onreadystatechange	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    xobj.onreadystatechange = function () {$/;"	f
