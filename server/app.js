@@ -1,5 +1,7 @@
 Meteor.startup(function () {
-  Teams.remove({});
+
+  //Teams.remove({});
+
   if (Teams.find().count() === 0) {
     var names = ["Ada Lovelace", "Grace Hopper", "Marie Curie",
                  "Carl Friedrich Gauss", "Nikola Tesla", "Claude Shannon"];
@@ -15,16 +17,16 @@ Meteor.startup(function () {
     });
   }
 
-  //NOTE: Rebuild on each restart
-  //Nodes.remove({});
-  //
-  //
+  Nodes.remove({});
+
   if (Nodes.find().count() === 0) {
       _.each(all_nodes, function (node) {
           Nodes.insert({
+              key: node.key,
               name: node.name,
               x: node.location.x,
               y: node.location.y,
+              connectedNodes: node.connected_nodes,
               items: node.items
           });
       });
