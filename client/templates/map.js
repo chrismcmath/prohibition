@@ -28,6 +28,7 @@ Template.map.rendered = function() {
     // Draw nodes
     nodes.forEach(function (node) {
         var colour = GetNodeColour(node);
+        console.log('using color: ' + colour);
         var circle = paper.circle(GetScaled(node.x), GetScaled(node.y), GetScaled(0.01));
         circle.attr("fill", colour);
         circle.attr("stroke-width", 0);
@@ -44,7 +45,6 @@ Template.map.rendered = function() {
         TweenOut();
 
         //text
-        console.log('make text');
         paper.text(
             GetScaled(node.x) + GetNameOffsetX(),
             GetScaled(node.y) + GetNameOffsetY(), node.name)
@@ -54,14 +54,27 @@ Template.map.rendered = function() {
 };
 
 function GetNodeColour(node) {
+    console.log('start');
     var teams = Teams.find({});
-    teams.forEach(function (team) {
+    var owningTeam = Teams.find({'capturedNodes.$' : node.key});
+    var owningTeam = Teams.find({capturedNodes: {$elemMatch: {Key: node.key}}});
+
+    debugger;
+    /*
+    return teams.map(function (team) {
+
+
+        //TODO: Change this to use _id
         if (team.capturedNodes.length > 0 &&
-            team.capturedNodes.contains(node._id)) {
+            $.inArray(node.key, team.capturedNodes) > -1) {
+                console.log('return team color: ' + team.colour);
                 return team.colour;
         }
     });
+    */
+    console.log('return neutral');
     return NEUTRAL_COLOUR;
+    console.log('end');
 }
 
 function GetScaled(value) {

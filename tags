@@ -24,15 +24,20 @@ NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templ
 NEUTRAL_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NEUTRAL_COLOUR = '#777';$/;"	v
 SCALAR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALAR = 100;$/;"	v
 SCALER	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALER = 100;$/;"	v
+TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    var TEAM_COLOURS = [$/;"	v
+TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var TEAM_COLOURS = [$/;"	v
 Template.map.rendered	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.rendered = function() {$/;"	f
 Template.map.rendered.TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenIn() {$/;"	f
 Template.map.rendered.TweenOut	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenOut() {$/;"	f
 TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^        function TweenIn() {$/;"	f
 TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenIn() {$/;"	f
 TweenOut	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenOut() {$/;"	f
+all_nodes.1	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/fake_teams.js	/^    "1": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/all_nodeds.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/all_nodes.js	/^    "mas": {$/;"	p
+all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/fake_teams.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/public/metadata/all_nodes.js	/^    "mas": {$/;"	p
+fake_teams.1	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/fake_teams.js	/^    "1": {$/;"	p
 height	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var height = 1;$/;"	v
 height	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var height = 2;$/;"	v
 height	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var height = GetHeight();$/;"	v
