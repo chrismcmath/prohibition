@@ -1,0 +1,17 @@
+head
+    //script(src="//code.jquery.com/jquery-1.11.3.min.js")
+    title Prohibiteers
+
+body
+    .container
+        .header.clearfix
+            nav
+                ul.nav.nav-pills.pull-right
+                    li(class="{{#if isMap}}active{{/if}}")
+                        a#map() Map
+                    li(class="{{#if isNodes}}active{{/if}}")
+                        a#nodes() Bars 
+                    li(class="{{#if isTeams}}active{{/if}}")
+                        a#teams() Teams 
+            h3.text-muted Go Pro-hibit!
+

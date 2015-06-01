@@ -15,12 +15,16 @@ Meteor.startup(function () {
   }
 
   //NOTE: Rebuild on each restart
-  Nodes.remove({});
-  _.each(all_nodes, function (node) {
-      Nodes.insert({
-          name: node.name,
-          x: node.location.x,
-          y: node.location.y
+  //Nodes.remove({});
+  //
+  //
+  if (Nodes.find().count() === 0) {
+      _.each(all_nodes, function (node) {
+          Nodes.insert({
+              name: node.name,
+              x: node.location.x,
+              y: node.location.y
+          });
       });
-  });
+  }
 });

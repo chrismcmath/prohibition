@@ -19,8 +19,17 @@ FlowRouter.route('/', {
 });
 
 FlowRouter.route('/teams/edit/:teamId', {
-    action: function() {
+    action: function(params, queryParams) {
+        params.location = "here i am";
+        console.log("Params:", params);
+        console.log("Query Params:", queryParams);
         FlowLayout.render("edit_team")
+    }
+});
+
+FlowRouter.route('/map', {
+    action: function() {
+        FlowLayout.render("map")
     }
 });
 
@@ -33,5 +42,14 @@ FlowRouter.route('/teams', {
 FlowRouter.route('/nodes', {
     action: function() {
         FlowLayout.render("nodes")
+    }
+});
+
+FlowRouter.route('/submit/:nodeId', {
+    subscriptions: function(params, queryParams) {
+        this.register('node', Meteor.subscribe('Nodes', params.nodeId));
+    },
+    action: function() {
+        FlowLayout.render("submit")
     }
 });
