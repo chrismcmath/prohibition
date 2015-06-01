@@ -12,8 +12,8 @@ all_nodes =
             "blockedBy": "team_a"
         }],
         "location": {
-            "x": 353,
-            "y": 352
+            "x": 0.5,
+            "y": 0.5
         }
     },
     "las_bas": {
@@ -28,8 +28,8 @@ all_nodes =
             "blockedBy": "team_a"
         }],
         "location": {
-            "x": 253,
-            "y": 252
+            "x": 0.1,
+            "y": 0.1
         }
     }
 }

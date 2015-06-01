@@ -1,11 +1,12 @@
 Meteor.startup(function () {
+  Teams.remove({});
   if (Teams.find().count() === 0) {
     var names = ["Ada Lovelace", "Grace Hopper", "Marie Curie",
                  "Carl Friedrich Gauss", "Nikola Tesla", "Claude Shannon"];
     _.each(names, function (name) {
       Teams.insert({
         name: name,
-        colour: '#fff',
+        colour: '#0ff',
         staticPoints: Math.floor(Random.fraction() * 10) * 5,
         capturedNodes: [],
         blockedNodes: [],
@@ -23,7 +24,8 @@ Meteor.startup(function () {
           Nodes.insert({
               name: node.name,
               x: node.location.x,
-              y: node.location.y
+              y: node.location.y,
+              items: node.items
           });
       });
   }

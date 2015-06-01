@@ -4,12 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+GetNodeColour	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetNodeColour(node) {$/;"	f
+Template.map.rendered	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.rendered = function() {$/;"	f
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/all_nodeds.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/all_nodes.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/public/metadata/all_nodes.js	/^    "mas": {$/;"	p
+height	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var height = 1;$/;"	v
+height	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var height = 2;$/;"	v
 jQuery	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var jQuery = require('.\/jquery.min.js');$/;"	v
 json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('\/public\/metadata\/all_nodes.json'); $/;"	v
 json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); $/;"	v
 json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); \/\/(with path)$/;"	v
 loadJSON	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^function loadJSON(callback) {   $/;"	f
+width	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var width = 1;$/;"	v
+x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function x(relX) {$/;"	f
 xobj.onreadystatechange	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    xobj.onreadystatechange = function () {$/;"	f
