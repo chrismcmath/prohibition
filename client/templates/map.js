@@ -32,6 +32,7 @@ Template.map.rendered = function() {
 
 function DrawMap() {
     console.log('draw map');
+    return;
     if (typeof paper != 'undefined') {
         paper.remove();
     }
@@ -54,7 +55,7 @@ function DrawMap() {
                     "M", GetScaled(node.x), GetScaled(node.y),
                     "L", GetScaled(cn.x), GetScaled(cn.y)
                 ]);
-                line.attr({stroke: NEUTRAL_COLOUR, "stroke-width": GetScaled(0.001)});
+                line.attr({stroke: NEUTRAL_COLOUR, "stroke-width": GetScaled(0.01), "stroke-dasharray": "-."});
             });
         }
     });
@@ -80,7 +81,7 @@ function DrawMap() {
             circle.animate({r:GetScaled(0.04)}, 1000, "<>", TweenOut);
         }
 
-        TweenOut();
+        //TweenOut();
 
         //text
         paper.text(

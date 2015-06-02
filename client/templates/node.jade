@@ -2,6 +2,6 @@ template(name="node")
     .col-lg-6.node
         .jumbotron
             h4.name #{name}
-            p
-                span.score #{x}
-                span.score #{y}
+            each items
+                h5.item_name #{name}
+                    span.item_price #{price}
