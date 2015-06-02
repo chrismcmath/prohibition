@@ -1,10 +1,8 @@
 template(name="team")
-    li(class="team {{self}}")
-        span.name #{name}
-        span.score #{score}
-        h3 Prohibitions (2 of 3 used):
-        ul
-            li place number one
-            li place number two
-            li can revoke these if it's you
-            li but! can't revoke the last one (else cheating)
+    .col-xs-12.node
+        .jumbotron
+            h2.name #{name}
+            .col-xs-6
+                p prohibitions
+            .col-xs-6
+                p points

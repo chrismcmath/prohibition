@@ -14,9 +14,11 @@ Template.body.helpers({
 });
 
 Template.body.events({
+    /*
     'click': function (event) {
         console.log('x. x. x. x. x. x. x. x. x. x. target: ' + event.currentTarget);
     },
+    */
     'click .nav-choice': function (event) {
         destination = event.currentTarget.id;
         console.log("dest: " + destination);
@@ -24,7 +26,8 @@ Template.body.events({
         console.log(' go to ' + FlowRouter.path('/' + destination) + " target " + event.currentTarget);
         FlowRouter.go(
             FlowRouter.path('/' + destination));
-    },
+    }
+    /*
     'click .nav-choice h4': function (event) {
         destination = event.currentTarget.id;
         console.log("dest: " + destination);
@@ -33,4 +36,5 @@ Template.body.events({
         FlowRouter.go(
             FlowRouter.path('/' + destination));
     }
+    */
 })
