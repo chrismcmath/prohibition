@@ -29,7 +29,7 @@ Meteor.startup(function () {
         });
     }
 
-    //Nodes.remove({});
+    Nodes.remove({});
 
     if (Nodes.find().count() === 0) {
         _.each(all_nodes, function (node) {

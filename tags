@@ -4,14 +4,22 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+DrawMap	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function DrawMap() {$/;"	f
 GetHeight	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetHeight() {$/;"	f
 GetHeight	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetHeight(h) {$/;"	f
 GetNameOffsetX	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetNameOffsetX() {$/;"	f
 GetNameOffsetY	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetNameOffsetY() {$/;"	f
+GetNameOffsetY	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetNameOffsetY(s) {$/;"	f
 GetNodeColour	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetNodeColour(node) {$/;"	f
 GetScaled	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetScaled(value) {$/;"	f
 GetWidth	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetWidth() {$/;"	f
 GetWidth	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetWidth(w) {$/;"	f
+MULTI_LINE_NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1}$/;"	p
+MULTI_LINE_NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1};$/;"	p
+MULTI_LINE_NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.2};$/;"	p
+MULTI_LINE_NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1}$/;"	p
+MULTI_LINE_NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1};$/;"	p
+MULTI_LINE_NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.2};$/;"	p
 NAME_OFFSET	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = 100;$/;"	v
 NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 0.05};$/;"	p
 NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 0.08};$/;"	p
@@ -21,11 +29,13 @@ NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templ
 NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 0.08};$/;"	p
 NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 0.1};$/;"	p
 NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 10};$/;"	p
+NEUTRAL_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NEUTRAL_COLOUR = '#000';$/;"	v
 NEUTRAL_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NEUTRAL_COLOUR = '#777';$/;"	v
 SCALAR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALAR = 100;$/;"	v
 SCALER	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALER = 100;$/;"	v
 TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    var TEAM_COLOURS = [$/;"	v
 TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var TEAM_COLOURS = [$/;"	v
+Template.map.draw	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.draw = function() {$/;"	f
 Template.map.rendered	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.rendered = function() {$/;"	f
 Template.map.rendered.TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenIn() {$/;"	f
 Template.map.rendered.TweenOut	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenOut() {$/;"	f
@@ -34,6 +44,7 @@ TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/m
 TweenOut	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenOut() {$/;"	f
 all_nodes.1	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/fake_teams.js	/^    "1": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/all_nodeds.js	/^    "mas": {$/;"	p
+all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/all_nodes.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/all_nodes.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/libs/fake_teams.js	/^    "mas": {$/;"	p
 all_nodes.mas	/Users/chrismcmath/Documents/meteor/beijing_node_game/public/metadata/all_nodes.js	/^    "mas": {$/;"	p
@@ -48,6 +59,7 @@ json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var j
 json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); $/;"	v
 json	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var json = require('public\/metadata\/all_nodes.json'); \/\/(with path)$/;"	v
 loadJSON	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^function loadJSON(callback) {   $/;"	f
+nodes	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^    var nodes = Nodes.find({});$/;"	v
 scalar	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var scalar = 100;$/;"	v
 width	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var width = 1;$/;"	v
 width	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var width = GetScaled(1);$/;"	v
