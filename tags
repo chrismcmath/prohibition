@@ -31,6 +31,11 @@ NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templ
 NAME_OFFSET.y	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NAME_OFFSET = {x: 0, y: 10};$/;"	p
 NEUTRAL_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NEUTRAL_COLOUR = '#000';$/;"	v
 NEUTRAL_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var NEUTRAL_COLOUR = '#777';$/;"	v
+PATH_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var PATH_COLOUR = '#333';$/;"	v
+PATH_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var PATH_COLOUR = '#555';$/;"	v
+PATH_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var PATH_COLOUR = '#777';$/;"	v
+PATH_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var PATH_COLOUR = '#bbb';$/;"	v
+PATH_COLOUR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var PATH_COLOUR = '#ccc';$/;"	v
 SCALAR	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALAR = 100;$/;"	v
 SCALER	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALER = 100;$/;"	v
 TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    var TEAM_COLOURS = [$/;"	v

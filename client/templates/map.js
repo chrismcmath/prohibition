@@ -1,6 +1,7 @@
 var SCALAR = 100;
 var NAME_OFFSET = {x: 0, y: 0.08};
 var NEUTRAL_COLOUR = '#000';
+var PATH_COLOUR = '#ccc';
 var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1};
 //NOTE: use glow when teams get it, ps.glow({color: '#f00',width: 40});
 
@@ -32,7 +33,6 @@ Template.map.rendered = function() {
 
 function DrawMap() {
     console.log('draw map');
-    return;
     if (typeof paper != 'undefined') {
         paper.remove();
     }
@@ -55,7 +55,7 @@ function DrawMap() {
                     "M", GetScaled(node.x), GetScaled(node.y),
                     "L", GetScaled(cn.x), GetScaled(cn.y)
                 ]);
-                line.attr({stroke: NEUTRAL_COLOUR, "stroke-width": GetScaled(0.01), "stroke-dasharray": "-."});
+                line.attr({stroke: PATH_COLOUR, "stroke-width": GetScaled(0.01), "stroke-dasharray": "-."});
             });
         }
     });
