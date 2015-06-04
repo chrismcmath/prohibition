@@ -1,12 +1,21 @@
 template(name="submit")
     .container
-        h1 Submit
-        h2 #{node.name}
-        form
-            p bought
-            p #{node_items}
-            p {{node_items}}
-            p nothing?
-            each node_items
-                h3 #{id} : #{name}
-                option(value="#{id}") Name: #{name}
+        .jumbotron
+            h1 #{node.name}
+            form.inline
+                p we bought
+                select#bought-select
+                    each node_items
+                        option(value="#{i}") #{name}
+                p we prohibit
+                select#prohibit-select
+                    option(value="-1") None
+                    each node_items
+                        option(value="#{i}") #{name}
+                br
+                br
+                input(type="submit", value="Submit")
+                br
+                br
+                small note
+                small setting a new prohibition will remove your previous one
