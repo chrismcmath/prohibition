@@ -23,7 +23,6 @@ Template.body.events({
         destination = event.currentTarget.id;
         console.log("dest: " + destination);
         Session.set("loc", destination);
-        console.log(' go to ' + FlowRouter.path('/' + destination) + " target " + event.currentTarget);
         FlowRouter.go(
             FlowRouter.path('/' + destination));
     }

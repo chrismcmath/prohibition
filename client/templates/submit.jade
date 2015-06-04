@@ -1,6 +1,12 @@
 template(name="submit")
     .container
         h1 Submit
-        h2 #{node}
-        h3 #{node.name}
-        h4 #{name}
+        h2 #{node.name}
+        form
+            p bought
+            p #{node_items}
+            p {{node_items}}
+            p nothing?
+            each node_items
+                h3 #{id} : #{name}
+                option(value="#{id}") Name: #{name}

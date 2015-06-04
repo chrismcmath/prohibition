@@ -6,10 +6,11 @@ head
 
 body
     .clearfix
-        nav
-            .col-xs-4.nav-choice.text-center#map
-                h4 Map
-            .col-xs-4.nav-choice.text-center#nodes
-                h4 Bars
-            .col-xs-4.nav-choice.text-center#teams
-                h4 Teams
+        if currentUser
+            nav
+                .col-xs-4.nav-choice.text-center#map
+                    h4 Map
+                .col-xs-4.nav-choice.text-center#nodes
+                    h4 Bars
+                .col-xs-4.nav-choice.text-center#teams
+                    h4 Teams

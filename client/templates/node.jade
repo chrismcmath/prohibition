@@ -2,14 +2,10 @@ template(name="node")
     .col-xs-12.node
         .jumbotron
             h2.name #{name}
-            .col-xs-6
-                p #{prohibition_string}
-                ul.no-dec
-                    each prohibiters
-                        li #{name}
-            .col-xs-6
-                p drinks
-                ul.upper-latin
-                    each items
-                        li.item_name #{name} -
-                            span.item_price #{price}
+            p drinks
+            .upper-latin
+                each items
+                    .item_name #{name} -
+                        span.item_price #{price}
+            br
+            p tap to purchase

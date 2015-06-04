@@ -1,8 +1,11 @@
 template(name="team")
     .col-xs-12.node
-        .jumbotron
+        .jumbotron(class="{{#if self}}self-border{{/if}}", style="background: #{colour}")
             h2.name #{name}
             .col-xs-6
-                p prohibitions
+                p prohibitions at
+                    each prohibitions
+                        p : #{node}
             .col-xs-6
                 p points
+                p #{points}

@@ -17,9 +17,9 @@ Template.node.helpers({
         if (p == 0) {
             return "no prohibitions";
         } else if (p == 1) {
-            return "one prohibition";
+            return "one prohibition from";
         } else {
-            return p + " prohibitions";
+            return p + " prohibitions from";
         }
     },
     prohibiters: function() {

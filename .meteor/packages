@@ -16,3 +16,5 @@ jquery
 less
 nemo64:bootstrap
 clubfest:raphael
+cfs:standard-packages
+cfs:gridfs

@@ -24,6 +24,8 @@ GetNodeOwner	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/node_help
 GetScaled	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetScaled(value) {$/;"	f
 GetScaled	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/map_helpers.js	/^GetScaled = function (value) {$/;"	f
 GetScaled	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/map_helpers.js	/^function GetScaled(value) {$/;"	f
+GetUserName	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/user_helpers.js	/^GetUserName = function() {$/;"	f
+GetUserTeam	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/user_helpers.js	/^GetUserTeam = function() {$/;"	f
 GetWidth	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetWidth() {$/;"	f
 GetWidth	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function GetWidth(w) {$/;"	f
 MULTI_LINE_NAME_OFFSET.x	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var MULTI_LINE_NAME_OFFSET = {x: 0, y: 0.1}$/;"	p
@@ -57,6 +59,7 @@ SCALAR	/Users/chrismcmath/Documents/meteor/beijing_node_game/lib/map_helpers.js	
 SCALER	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^var SCALER = 100;$/;"	v
 TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^    var TEAM_COLOURS = [$/;"	v
 TEAM_COLOURS	/Users/chrismcmath/Documents/meteor/beijing_node_game/server/app.js	/^var TEAM_COLOURS = [$/;"	v
+Template.loginButtons.rendered	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/loginButtons.js	/^Template.loginButtons.rendered = function() {$/;"	f
 Template.map.draw	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.draw = function() {$/;"	f
 Template.map.rendered	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^Template.map.rendered = function() {$/;"	f
 Template.map.rendered.TweenIn	/Users/chrismcmath/Documents/meteor/beijing_node_game/client/templates/map.js	/^function TweenIn() {$/;"	f

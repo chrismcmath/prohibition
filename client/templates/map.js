@@ -50,14 +50,17 @@ function DrawMap() {
                 var cn = Nodes.findOne({key: cnKey}); 
 
                 //NOTE: The connected node might not have loaded yet, so return safely
-                if (typeof cn == 'undefined') {
+                if (typeof cn == 'undefined' ||
+                        cn == null) {
                     return;
                 }
 
                 var nodeOwner = GetNodeOwner(node);
                 var cnOwner = GetNodeOwner(cn);
 
-                if (typeof nodeOwner != 'undefined' && nodeOwner._id == cnOwner._id) {
+                if (typeof nodeOwner != 'undefined' &&
+                        nodeOwner != null &&
+                        nodeOwner._id == cnOwner._id) {
                     var blackLine = paper.path([
                         "M", GetScaled(node.x), GetScaled(node.y),
                         "L", GetScaled(cn.x), GetScaled(cn.y)
