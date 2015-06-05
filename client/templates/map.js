@@ -4,20 +4,9 @@ var BORDER_COLOUR = '#555';
 //NOTE: use glow when teams get it, ps.glow({color: '#f00',width: 40});
 
 Meteor.autosubscribe(function() {
-    console.log('autosubscribe');
   Teams.find().observe({
-    added: function(team){ 
-        console.log('team added');
-        DrawMap();
-    },
     updated: function(team){ 
         console.log('team updated');
-        DrawMap();
-    }
-  });
-  Nodes.find().observe({
-    added: function(team){ 
-        console.log('team added');
         DrawMap();
     }
   });
@@ -60,6 +49,7 @@ function DrawMap() {
 
                 if (typeof nodeOwner != 'undefined' &&
                         nodeOwner != null &&
+                        cnOwner != null &&
                         nodeOwner._id == cnOwner._id) {
                     var blackLine = paper.path([
                         "M", GetScaled(node.x), GetScaled(node.y),

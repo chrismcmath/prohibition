@@ -7,7 +7,7 @@ Accounts.onCreateUser(function(options, user) {
         capturedNodes: [],
         blockedNodes: [],
         prohibitions: [],
-        visited_bars: []
+        visitedNodes: []
     });
 
     Meteor.users.update(user._id, {$set: {'teamID': team._id}});

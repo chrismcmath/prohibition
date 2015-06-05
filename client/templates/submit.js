@@ -20,6 +20,9 @@ Template.submit.events({
         // construct the contact object that will be passed to the method
         var boughtID = template.$('#bought-select').val();
         var prohibitID = template.$('#prohibit-select').val();
-        CommitPurchase(boughtID, prohibitID, Nodes.findOne(FlowRouter.getParam("nodeId")), GetUserTeam());
+        var node = Nodes.findOne(FlowRouter.getParam("nodeId"));
+        var team = GetUserTeam();
+        Teams.update(team._id, {$inc: {points: 1}});
+        Meteor.myFunctions.CommitPurchase(boughtID, prohibitID, node, team);
     }
 });

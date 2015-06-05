@@ -18,6 +18,7 @@ Meteor.startup(function () {
 
     //Teams.remove({});
 
+/*
     if (Teams.find().count() === 0) {
         _.each(fake_teams, function (team) {
             Teams.insert({
@@ -31,8 +32,9 @@ Meteor.startup(function () {
             });
         });
     }
+    */
 
-    Nodes.remove({});
+    //Nodes.remove({});
 
     if (Nodes.find().count() === 0) {
         _.each(all_nodes, function (node) {
