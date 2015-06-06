@@ -4,10 +4,14 @@ var BORDER_COLOUR = '#555';
 //NOTE: use glow when teams get it, ps.glow({color: '#f00',width: 40});
 
 Meteor.autosubscribe(function() {
-  Teams.find().observe({
-    updated: function(team){ 
-        console.log('team updated');
-        DrawMap();
+  EventStrings.find().observe({
+    added: function(team){ 
+        console.log("[OBSERVER] EventString added, update map after 1000ms");
+        // Wait for model update
+        setTimeout(function () {
+            console.log("[OBSERVER] Update map");
+            DrawMap();
+        }, 1000);
     }
   });
 });
@@ -17,7 +21,7 @@ Template.map.rendered = function() {
     DrawMap();
 }
 
-function DrawMap() {
+DrawMap = function () {
     console.log('draw map');
     if (typeof paper != 'undefined') {
         paper.remove();
@@ -75,12 +79,23 @@ function DrawMap() {
     // Draw nodes
     nodes.forEach(function (node) {
         var owner = GetNodeOwner(node);
-        console.log('got owner: ' + owner);
         var colour;
         if (owner != null) {
             colour = owner.colour;
         } else {
             colour = '#fff';
+        }
+
+        if (GetUserTeam().blockedNodes.indexOf(node.key) > -1) {
+            var outerBlock = paper.circle(GetScaled(node.x), GetScaled(node.y), GetScaled(0.06));
+            outerBlock.attr("fill", NEUTRAL_COLOUR);
+            outerBlock.attr("stroke-width", 0);
+            outerBlock.attr("stroke", 'transparent');
+
+            var innerBlock = paper.circle(GetScaled(node.x), GetScaled(node.y), GetScaled(0.05));
+            innerBlock.attr("fill", "#fff");
+            innerBlock.attr("stroke-width", 0);
+            innerBlock.attr("stroke", 'transparent');
         }
 
         var circle = paper.circle(GetScaled(node.x), GetScaled(node.y), GetScaled(0.04));

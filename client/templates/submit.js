@@ -22,7 +22,8 @@ Template.submit.events({
         var prohibitID = template.$('#prohibit-select').val();
         var node = Nodes.findOne(FlowRouter.getParam("nodeId"));
         var team = GetUserTeam();
-        Teams.update(team._id, {$inc: {points: 1}});
         Meteor.myFunctions.CommitPurchase(boughtID, prohibitID, node, team);
+
+        FlowRouter.go(FlowRouter.path('/map'));
     }
 });

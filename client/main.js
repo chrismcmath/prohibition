@@ -25,6 +25,13 @@ Template.body.events({
         Session.set("loc", destination);
         FlowRouter.go(
             FlowRouter.path('/' + destination));
+    },
+    'touchstart .nav-choice': function (event) {
+        destination = event.currentTarget.id;
+        console.log("dest: " + destination);
+        Session.set("loc", destination);
+        FlowRouter.go(
+            FlowRouter.path('/' + destination));
     }
     /*
     'click .nav-choice h4': function (event) {

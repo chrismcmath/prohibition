@@ -6,12 +6,25 @@ TEAM_COLOURS = [
     "#baed91",
     "#b2cefe",
     "#f2a2e8",
-    "#f0a0a0",
-    "#f0b080",
-    "#f0f080",
-    "#b0e090",
-    "#b0c0f0",
-    "#f0a0e0"
+    "#43A134",
+    "#1C655B",
+    "#4D1E6D",
+    "#9A2F50",
+    "#AC7F2C",
+    "#8EA537",
+
+    "#fea3aa", // repeat
+    "#f8b88b",
+    "#faf884",
+    "#baed91",
+    "#b2cefe",
+    "#f2a2e8",
+    "#43A134",
+    "#1C655B",
+    "#4D1E6D",
+    "#9A2F50",
+    "#AC7F2C",
+    "#8EA537"
 ];
 
 Meteor.startup(function () {

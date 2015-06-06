@@ -3,9 +3,13 @@ template(name="team")
         .jumbotron(class="{{#if self}}self-border{{/if}}", style="background: #{colour}")
             h2.name #{name}
             .col-xs-6
-                p prohibitions at
-                    each prohibitions
-                        p : #{node}
+                if hasProhibition
+                    p prohibition at
+                    each prohibitions 
+                        p #{name}
+                        br
+                else
+                    p prohibition inactive
             .col-xs-6
                 p points
                 p #{points}
